@@ -1,0 +1,32 @@
+
+#txt {
+    color: red;
+    text-shadow:1px 1px black;
+    text-align: center;
+    font-size: 40px;
+    background-color:#20e000;
+    width: 20%;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 75px solid black;
+    border-radius:2%;
+}
+h1 { 
+    font-family:arial;
+    font-size: 50px;
+    text-shadow:1px 1px #008040;
+    text-align:center;
+}
+button {
+    color: red;
+    font-family:arial;
+    text-shadow:1px 1px red;
+    background-color:#4080ff;
+    border:none;
+    border-radius:10%;
+   
+}
+.clocks {
+    text-align:center;
+}

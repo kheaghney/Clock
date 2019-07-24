@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+</head>
+<body onload="startTime()" id="body">
+    <div class="col-md-10 col-xs-10"><h1>Clock</h1></div>
+    <div class="col-md-2 col-xs-2"><p></p></div>
+    <div class="clocks">
+            <button>Alarm</button>
+            <button>Radio</button>
+            <button>AM/FM</button>
+            <button>Snooze</button>
+            
+<div id="txt"></div>
+
+    </div>
+
+<script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+        
+    </script>
+    
+</body>
+</html>
